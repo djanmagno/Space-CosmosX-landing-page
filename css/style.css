@@ -1,0 +1,787 @@
+/* Font-famaly */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+
+/* Estilo Página Inteira */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #09090a;
+    padding: 0px;
+}
+
+/* Inicio do Cabecalho e Menu de Navegacao */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1425px;
+    height: 88px;
+    background-color: #121214;
+    box-shadow: inset 0 -1px 0 #29292e;
+}
+
+.container {
+    width: 1425px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+   cursor: pointer; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header .logotipo{
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bolder;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0 35px;
+    border-right: 1px solid #fff;
+    transition: all .5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #8257e5;
+}
+
+
+nav ul li:last-child a {
+    border-right: none;
+}
+/* Fim do Cabecalho e Menu de Navegacao */
+
+/* Inicio da parte do Sobre */
+#principal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    min-height: 500px;
+    box-shadow: inset 0 -1px 0 #29292e;
+}
+
+#principal .texto-principal {
+    width: 50%;
+}
+
+#principal .texto-principal h4 {
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+#principal .texto-principal h1 {
+    font-size: 4em;
+    margin: 8px 0;
+}
+
+#principal .texto-principal p {
+    font-size: .9 ;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 2;
+}
+
+#principal .texto-principal button {
+    position: relative;
+    border: none;
+    background: none;
+    font-size: 2em;
+    padding: 10px 20px;
+    margin-top: 35px;
+    
+}
+
+#principal .texto-principal button::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: #8257e5;
+    z-index: -1;
+    border-radius: 5px;
+    transition: all .5 ease-in-out;
+}
+
+#principal .texto-principal button:hover::before {
+    width: 100%;
+}
+
+#principal .imagem-principal {
+    position: relative;
+}
+
+#principal .imagem-principal img {
+    position: absolute;
+    top: -350px;
+    right: -20px;
+    width: 700px;
+}
+/* Fim da parte do Sobre */
+
+/* Inicio do To-do */
+
+#to-do{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 1180px;
+    background-color: #121214;
+    box-shadow: inset 0 -1px 0 #29292e;
+}
+
+#to-do .countdown{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+#to-do .countdown h1 {
+    font-size: 4em;
+    margin: 8px 0;
+}
+
+#to-do .countdown h4 {
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+#to-do .countdown .contador{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+#to-do .countdown .contador li{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    list-style: none;
+    padding: 1rem;
+    background: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #29292e;
+    text-align: center;
+}
+
+#to-do .countdown .contador li span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 6rem;
+    color: dodgerblue;
+}
+
+#to-do .content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: center;
+    height: 680px;
+}
+
+#to-do .content .to-do-e{
+    width: 45%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#to-do .content .to-do-d {
+    width: 45%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 70px;
+}
+
+#to-do .content .to-do-e #i{
+    height: 125px;
+    width: 95%;
+    background-image: linear-gradient(to left top, #121214, #282a35, #3f445a, #555f82, #6a7dac, #7c88c0, #9192d4, #a99be6, #c68fdc, #df83c9, #f377b0, #ff6f91);
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+}
+
+#to-do .content .to-do-e #i p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    width: 72%;
+    text-align: justify;
+    margin: 5px 5px;
+}
+
+#to-do .content .to-do-e #i img{
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+    position: absolute;
+    top: -30px;
+    right: -40px;
+    border: 5px solid #121214;
+}
+
+#to-do .content .to-do-d #p{
+    height: 125px;
+    width: 95%;
+    background-image: linear-gradient(to left top, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #7cb5ed, #89aadf, #92a1d1, #969dc1, #9899b1, #9696a2, #939393);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0px;
+    box-sizing: border-box;
+    margin:10px 10px;   
+}
+
+#to-do .content .to-do-d #p p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    width: 72%;
+    text-align: justify;
+    margin: 5px 5px;
+}
+
+#to-do .content .to-do-d #p img{
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+    position: absolute;
+    top: -30px;
+    right: 480px;
+    border: 5px solid #121214;
+}
+/* fim do To-Do */
+
+/* Abas */
+#abass{
+    display: flex;
+    flex-direction: center;
+    justify-content: space-evenly;
+    background-color: #09090a;
+    height: 500px;
+    box-shadow: inset 0 -1px 0 #29292e;
+}
+
+#abass .tab{
+    margin: auto;
+    width: 600px;
+    height: 350px;   
+}
+
+#abass #txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+#abass #txt .txt{
+    margin: auto;
+    width: 580px;
+    height: 300px; 
+}
+
+#abass #txt .img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width:500px;
+    height: 500px;
+}
+
+#abass #txt .img, .txt h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 8px 0;
+}
+
+#abass #txt .img img{
+    margin:20px 20px;
+    width: 380px;
+    height: 380px;
+}
+
+.tab .tabs .content {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+}
+
+.tab .tabs .content #img2{
+    margin:auto;
+    width: 250px;
+    height: 275px;
+}
+
+.tab .tabs .content #img2 img{
+    margin:auto;
+    width: 250px;
+    height: 275px;
+}
+
+.tab .tabs .content #txt2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:auto;
+    width: 200px;
+    height: 250px;
+
+}
+
+.tab .tabs .content #txt2 h2{
+    font-size: 2em;
+    margin: 8px 0;
+}
+
+.tab .tabs .content #txt2 p{
+    font-size: .9 ;
+    font-weight: 300;
+    text-align: left;
+    line-height: 2;
+}
+
+.tab .tabs .content #txt2 button{
+    position: relative;
+    border: none;
+    background: #8257e5;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 35px;
+    border-radius: 5px;;  
+}
+
+/*reset*/
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+   
+
+
+/*envolve todo o nosso conteúdo*/
+.tab{
+    width: 700px;
+    margin: 0px auto;
+}
+
+/*esconde o radio button*/
+.tab input[type]{
+    display: none;
+}
+
+/*nossos próprios botões*/
+.tab label {
+    display: block;
+    float: left;
+    padding: 12px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+/*ataca o label com hover e o radio button checkado*/
+.tab label:hover,
+.tab input:checked + label {
+    background: #8257e5;
+    color: #fff;
+}
+
+/*o conteúdo que mudar ao clicar nos botões*/
+.tabs {
+    clear: both;
+    perspective: 400px;
+    -webkit-perspective: 400px;
+}
+
+/*aqui a nossa content*/
+.tabs .content {
+    background: #121214;
+    width: 589px;
+    height: 300px;
+    position: absolute;
+    border: 2px solid #8257e5;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
+    transition: opacity .3s, transform 1s;
+    z-index: 0;
+}
+
+/*aqui estão nosso links*/
+#tab1:checked ~ .tabs .content:nth-of-type(1),
+#tab2:checked ~ .tabs .content:nth-of-type(2),
+#tab3:checked ~ .tabs .content:nth-of-type(3),
+#tab4:checked ~ .tabs .content:nth-of-type(4),
+#tab5:checked ~ .tabs .content:nth-of-type(5) {
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Fim Abas */
+
+/* Inicio da parte de contado */
+#secundario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    background-color: #121214;
+    box-shadow: inset 0 -1px 0 #29292e;
+}
+
+.texto-secundario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    width: 50%;
+    background: linear-gradient(to left top,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F),#F9F871;
+    height: 200px;
+    min-height: 200px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin: 0px 20px;
+}
+
+.texto-secundario p {
+    width: 70%;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.texto-secundario img {
+    width: 300px;
+    height: 210px;
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    border: 8px solid #121214;
+}
+
+.texto-secundario button {
+    position: relative;
+    border: none;
+    background: none;
+    font-size: 1.1em;
+    text-shadow: 0 0 2px 1px #121214;
+    margin: 10px 0;
+    transition: all .5 ease-in-out; 
+}
+
+.texto-secundario button::after {
+    content: '::-';
+    position:absolute;
+    top: 0;
+    right: -20px;
+    transition: all .5 ease-in-out; 
+}
+
+.texto-secundario button:hover::after {
+    right: -35px;
+    color: #121214;
+}
+
+.texto-secundario button:hover {
+    color: #121214;
+}
+
+#secundario .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    letter-spacing: 2px;
+}
+
+#secundario .wrapper h1{
+    margin-bottom: 0px;
+    font-size: 28px;
+    color: #fff;
+}
+
+#secundario .wrapper h4{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.nome {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    position: relative; 
+}
+
+.nome .input{
+    width: 196px;
+    padding: 7px 55px 7px 52px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.nome .input, select, textarea{
+    color: #121214;
+}
+
+.nome textarea:focus, input:focus {
+    color: #121214;
+}
+
+.nome input[type=text]:focus{
+    outline: 2px solid #8257e5;
+}
+
+.newsletter{
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    
+}
+
+.newsletter .input{
+    width: 100%;
+    padding: 15px 100px 15px 60px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.newsletter .input, select, textarea{
+    color: #121214;
+}
+
+.newsletter textarea:focus, input:focus {
+    color: #121214;
+}
+
+.newsletter input[type=text]:focus{
+    outline: 2px solid #8257e5;
+}
+
+.newsletter .fas{
+    color: #09090a;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    font-size: 20px;
+}
+
+.newsletter .btn{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background: dodgerblue;
+    padding: 7px 5px;
+    border-radius: 25px;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+.newsletter .btn:hover{
+    background: #8257e5;
+}
+
+#secundario .wrapper span{
+    margin: 5px 0px;
+    color: #fff;
+    font-size: 8px;
+}
+
+#secundario .wrapper span a{
+    color: blue;
+    font-size: 8px;
+}
+/* Fim da parte de contado */
+
+/*Inicio do Footer */
+.footer{
+    width: 1425px;
+    background-color: #09090a ;
+}
+
+.footer .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 0px;
+}
+
+.footer .footer-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 200px;  
+}
+
+.footer .footer-container .box #logofooter{
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px;
+}
+
+.footer .footer-container .box span{
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 24px;
+}
+
+.footer .footer-container .Links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 200px;
+}
+
+.footer .footer-container .Links h3{
+    font-size: 24px;
+}
+
+.footer .footer-container .Links ul li{
+    position: relative;
+    list-style: none;
+}
+
+.footer .footer-container .Links ul li a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 0 35px;
+    transition: all .5s ease-in-out;
+}
+
+.footer .footer-container .Links ul li a:hover {
+    color: #8257e5;
+}
+
+
+.footer .footer-container .midias-sociais {
+    width: 26%;
+}
+
+#twitter {
+    width: 42px;
+    height: 42px;
+}
+
+.footer .footer-container .midias-sociais img {
+    position: relative;
+    top: 0;
+    margin: 0 20px;
+    transition: all .5 ease-in-out;
+}
+
+.footer .footer-container .midias-sociais img:hover {
+    top: -20px;
+}
+/*Fim do Footer */
+
+/*Inicio do Responsivo */
+@media screen and (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+
+    .footer .footer-container{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+/*Fim do Responsivo */
